@@ -1,0 +1,68 @@
+<div class="header">
+  <div class="content"> 
+    <img src="https://image3.mouthshut.com/images/imagesp/925754976s.jpg">
+    <!-- <p-dropdown [options]="cities1" [(ngModel)]="selectedCity1"></p-dropdown> -->
+  </div>
+</div>
+<div class="content">
+  <nav class="navbar">
+    <div class="container-fluid">
+      <h2>{{capManageCampaignsValue}}</h2>
+      <div class="tableData">
+          
+      <ul class="nav nav-tabs">
+        <div class="dropDown">
+          <li class="dropdown-header">
+            <select class="selectpicker" (change)="getResourceValue()" [(ngModel)]="selectedLanguage">
+              <option value='english'>
+                {{capEnglishValue}}
+              </option>
+              <option value='german'>
+                {{capGermanValue}}
+              </option>
+            </select>
+          </li>
+        </div>
+        
+         
+             
+                  <li  [ngClass]="{'active':upcomingClass,'nav':true}"><a data-toggle="tab"  (click)="toggle('upcoming')">{{capUpcomingCampaignsValue}}</a></li>
+              
+              
+                  <li  [ngClass]="{'active':liveClass,'nav':true}"><a data-toggle="#live"  (click)="toggle('live')">{{capLiveCampaignsValue}}</a></li>
+              
+           
+                  <li  [ngClass]="{'active':pastClass,'nav':true}"><a data-toggle="#past"  (click)="toggle('past')">{{capPastCampaignsValue}}</a></li>  
+              
+         
+    </ul>
+      </div>
+
+
+    </div>
+  </nav>
+  
+    
+  
+
+
+</div>
+  
+
+<div >
+  <app-upcoming-data *ngIf="selectedTab==='upcoming'" [selectedLanguage]="selectedLanguage"
+   [upcomingData]="upcomingData" (rescheduleCampaign)="rescheduleCampaign()"></app-upcoming-data>
+</div>
+<div >
+  <app-live-campaign *ngIf="selectedTab==='live'" [selectedLanguage]="selectedLanguage"
+   [liveData]="liveData" (rescheduleCampaign)="rescheduleCampaign()">
+  </app-live-campaign>
+</div>
+<div >
+  <app-past-campaign *ngIf="selectedTab==='past'" [selectedLanguage]="selectedLanguage"
+  [pastData]="pastData" (rescheduleCampaign)="rescheduleCampaign()">
+  </app-past-campaign>
+</div>
+
+
+

@@ -1,0 +1,85 @@
+{
+  "data": [{
+    "key": "capManageCampaigns",
+    "english": "Manage Campaigns",
+    "german": "Kampagnen verwalten"
+  },
+  {
+    "key": "capUpcomingCampaigns",
+    "english": "Upcoming Campaigns",
+    "german": "Kommende Kampagnen"
+  },
+  {
+    "key": "capLiveCampaigns",
+    "english": "Live Campaigns",
+    "german": "Live-Kampagnen"
+  },
+
+  {
+    "key": "capPastCampaigns",
+    "english": "Past Campaigns",
+    "german": "Vergangene Kampagnen"
+  },
+  {
+    "key": "capDaysAgo",
+    "english": "Days Ago",
+    "german": "Vor Tagen"
+  },
+  {
+    "key": "capDaysAhead",
+    "english": "Days Ahead",
+    "german": "Tage voraus"
+  },
+  {
+    "key": "capEnglish",
+    "english": "English",
+    "german": "Englisch"
+  },
+  {
+    "key": "capGerman",
+    "english": "German",
+    "german": "Deutsche"
+  },
+  {
+    "key":"capCsv",
+    "english":"CSV",
+    "german":"CSV"
+  },
+  {
+    "key":"capReport",
+    "english":"Report",
+    "german":"Bericht"
+  },
+  {
+    "key":"capScheduleAgain",
+    "english":"Schedule Again",
+    "german":"wieder einplanen"
+  },
+  {
+    "key":"capDate",
+    "english":"Date",
+    "german":"Datum"
+  },
+  {
+    "key":"capScheduleAgain",
+    "english":"Schedule Again",
+    "german":"wieder einplanen"
+  },
+  {
+    "key":"capCampaign",
+    "english":"Campaign",
+    "german":"Kampagne"
+  },
+  {
+    "key":"capView",
+    "english":"View",
+    "german":"Aussicht"
+  },
+  {
+    "key":"capAction",
+    "english":"Action",
+    "german":"Aktion"
+  }
+ 
+]
+}

@@ -1,0 +1,54 @@
+.header{
+    background-color: #17175d;
+    height: 50px;
+    width: 100%;
+    
+}
+.content{
+    width:calc(100% - 150px);
+    margin: 0 auto;
+}
+.content img{
+    max-width: 50px;
+}
+li.nav>a{
+    color:black;
+  }
+
+  li.active{
+    color: green; 
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-bottom: 4px solid green;
+  }
+  .active a{
+      color: green;
+  }
+
+.tableData{
+    position: relative;
+}  
+.dropDown{
+    position: absolute;
+    right: 0px;
+}
+
+
+@media(max-width: 782px){
+    .content{
+        width:calc(100% - 55px);
+        margin: 0 auto;
+    }
+
+.dropDown{
+    position: static;
+}
+
+.nav-tabs > li{
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+}

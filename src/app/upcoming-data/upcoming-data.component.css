@@ -1,0 +1,36 @@
+.content {
+  width: calc(100% - 163px);
+  margin: 0 auto;
+  height: calc(100vh - 200px);
+}
+
+th,
+td,
+tr {
+  white-space: nowrap;
+}
+
+.container {
+  width: 100%;
+}
+
+.modal-footer {
+  text-align: center;
+}
+@media(max-width: 782px){
+  .content{
+      width:calc(100% - 55px);
+      margin: 0 auto;
+  }
+
+.dropDown{
+  position: static;
+}
+
+.nav-tabs > li{
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+}

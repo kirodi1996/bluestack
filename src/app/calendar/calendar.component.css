@@ -1,0 +1,10 @@
+/deep/ body .ui-fluid .ui-calendar.ui-calendar-w-btn input.ui-inputtext {
+  display: none;
+}
+
+/deep/ body .ui-calendar.ui-calendar-w-btn .ui-datepicker-trigger.ui-button {
+  width: 20px;
+  height: 20px;
+
+}
+

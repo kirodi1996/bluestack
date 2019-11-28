@@ -1,0 +1,89 @@
+
+  <div class="content" style="overflow-x:auto;">
+    <table class="table">
+      <thead>
+        <tr class="heading-row">
+          <th *ngFor="let column of columns">{{column}} </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of upcomingData">
+          <td class="date-column">
+            <div>{{data.createdOn | date}} </div>
+            <div class="days-left-text">{{data.differenceInDays}} {{capDaysValue}}</div>
+          </td>
+          <td class="detail-column"> <img style="width:30px; height: 30px;" src="assets/Bitmap.png"> {{data.name}}</td>
+          <td class="price-column"> 
+              <div data-toggle="modal" data-target="#myModal"> <img style="width:30px" src="assets/Price.png">
+                {{data.region}}</div></td>
+          <td class="action-column"> <img style="width:20px; height: 20px;" src="assets/file.png"> {{capCsvValue}}
+            <img style="width:20px; height: 20px;" src="assets/statistics-report.png"> {{capResportValue}}
+            <app-calendar [createdOnDate]="data.createdOn" (campaignDateChange)="campaignDateChange($event,data)">
+            </app-calendar> {{capScheduleAgainValue}}
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+
+
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog">
+    
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <img src="assets/80.png">
+                </div>
+    
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <h2>Pubg Mobile</h2>
+                </div>
+              </div>
+              <div class="row">
+                <h2 class="col-lg-12 col-sm-12 col-md-12 col-xs-12">Pricing </h2>
+              </div>
+            </div>
+           
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  1 week - 1 month
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  $100
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  6 months
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  $500
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  1 year
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  $900
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>

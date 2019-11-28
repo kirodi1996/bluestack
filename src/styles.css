@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+.days-left-text {
+  font-size: 10px;
+  color: #848484;
+}
+
+.heading-row {
+  background: #ececec;
+}
+
+.date-column {
+  width: 15%;
+}
+
+.detail-column {
+  width: 20%;
+}
+
+.price-column {
+  width: 20%;
+}
+
+.action-column {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+li.active.nav a{
+  color:green!important;
+  font-weight: bold;
+}
+select.ng-untouched , select.ng-touched{
+  padding: 10px 55px 10px 0px;
+  margin-bottom: 20px;
+}
+.treetableDate .ui-widget-content{
+  width: 50%; 
+}
